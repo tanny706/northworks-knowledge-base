@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "_Index/Dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
+              "title": "Dashboard"
             }
           }
         ]
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "_Index/Templates/Client.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Client"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "_Index/Templates/Client.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from Client"
             }
           },
           {
@@ -172,13 +172,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "_Index/Templates/Client.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of Client"
             }
           }
         ]
@@ -196,11 +196,35 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e33168db8e140068",
   "lastOpenFiles": [
-    "Welcome.md"
+    "Clients/_Index.md",
+    "_Index/Templates/Person.md",
+    "_Index/Templates/Proposal.md",
+    "_Index/Templates/Meeting.md",
+    "_Index/Templates/Client.md",
+    "_Index/Templates/Engagement.md",
+    "_Index/Templates/Decision.md",
+    "_Index/Templates/Strategy.md",
+    "_Index/Company Overview.md",
+    "Cheat Sheet.md",
+    "_Index/Key Decisions.md",
+    "_Index/Dashboard.md",
+    "Welcome.md",
+    "README.md",
+    "Inbox",
+    "People",
+    "Meetings",
+    "Engagements",
+    "Clients",
+    "Business/Strategy",
+    "Business/Operations",
+    "Business/Finance",
+    "Business/Business Development",
+    "Business"
   ]
 }
