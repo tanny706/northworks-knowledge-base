@@ -39,6 +39,10 @@ _Proposals pending or in scoping:_
 - [[People/]] — Contacts, prospects, partners, advisors
 - [[Meetings/]] — Meeting notes archive
 
+## Content
+
+- [[Content/_Index]] — Video pipeline (ideas → script → recorded → published → blog)
+
 ---
 
 ## Maps of Content
@@ -78,6 +82,7 @@ _AI-friendly: Use search/filter instead of manual tracking_
 - [[_Index/Templates/Client]] — Client profiles
 - [[_Index/Templates/Proposal]] — Proposals and SOWs
 - [[_Index/Templates/Person]] — People and stakeholder notes
+- [[_Index/Templates/Video]] — Video content (idea → script → captions → blog)
 
 ---
 
