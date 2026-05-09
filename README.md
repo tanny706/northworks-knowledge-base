@@ -68,6 +68,9 @@ Each note should be independently understandable. Include:
 
 📁 Proposals/                 # Proposals and SOWs in pipeline
 
+📁 Ventures/                  # Prospective new companies / partnerships (separate from Northworks engagements)
+  └── [codename]/             # One folder per venture; rename when real name lands
+
 📁 People/                    # Contacts, prospects, partners, advisors
 
 📁 Meetings/                  # All meeting notes (chronological capture)
