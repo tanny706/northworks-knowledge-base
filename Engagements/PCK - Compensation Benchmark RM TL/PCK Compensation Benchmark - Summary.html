@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCK Compensation Benchmark — RM & Team Leader | Northworks</title>
+<!-- Open in any browser. Print to PDF for sharing (A4 portrait optimised). -->
+<style>
+  :root {
+    --navy: #0b2545;
+    --navy-light: #1a3a6b;
+    --navy-dark: #061833;
+    --gold: #c9a227;
+    --gold-light: #e6c560;
+    --orange: #d97706;
+    --grey-50: #f7f8fa;
+    --grey-100: #eef0f4;
+    --grey-200: #dde1e8;
+    --grey-300: #c4cad4;
+    --grey-500: #6b7280;
+    --grey-700: #374151;
+    --grey-900: #111827;
+    --red-soft: #b91c1c;
+    --green-soft: #047857;
+    --warn-bg: #fff7ed;
+    --warn-border: #fb923c;
+    --success-bg: #ecfdf5;
+    --success-border: #10b981;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Sukhumvit Set', 'Noto Sans Thai', 'Segoe UI', Roboto, sans-serif;
+    color: var(--grey-900);
+    background: var(--grey-50);
+    line-height: 1.55;
+    font-size: 14px;
+  }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 24px rgba(11, 37, 69, 0.08);
+  }
+
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 60%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 40px 56px 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+    opacity: 0.12;
+  }
+  .header .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 11px;
+    color: var(--gold-light);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header .subtitle {
+    color: var(--grey-200);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  .header .meta {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    font-size: 12.5px;
+  }
+  .header .meta .meta-item .label {
+    color: var(--gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 10px;
+    margin-bottom: 3px;
+    font-weight: 600;
+  }
+  .header .meta .meta-item .value {
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* Section */
+  .section {
+    padding: 36px 56px;
+    border-bottom: 1px solid var(--grey-100);
+  }
+  .section:last-child { border-bottom: none; }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: -0.2px;
+  }
+  .section-title .num {
+    background: var(--navy);
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .section-sub {
+    color: var(--grey-500);
+    font-size: 13px;
+    margin: 0 0 22px;
+  }
+
+  /* Exec summary */
+  .exec-summary {
+    background: linear-gradient(135deg, #f9fafc 0%, #f3f5f9 100%);
+    border: 1px solid var(--grey-200);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 26px 30px;
+  }
+  .exec-summary h3 {
+    margin: 0 0 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .exec-summary ul {
+    margin: 0;
+    padding-left: 18px;
+  }
+  .exec-summary li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--grey-700);
+  }
+  .exec-summary li strong { color: var(--navy); }
+  .critical-flag {
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: var(--warn-bg);
+    border-left: 3px solid var(--warn-border);
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--grey-900);
+  }
+  .critical-flag .flag-label {
+    color: var(--orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 10.5px;
+    margin-right: 8px;
+  }
+
+  /* Bar chart */
+  .chart-block { margin-bottom: 32px; }
+  .chart-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 4px;
+  }
+  .chart-caption {
+    font-size: 12px;
+    color: var(--grey-500);
+    margin: 0 0 16px;
+  }
+  .bar-row {
+    display: grid;
+    grid-template-columns: 150px 1fr 130px;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .bar-label {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--grey-700);
+    text-align: right;
+  }
+  .bar-label.benchmark { color: var(--navy); font-weight: 700; }
+  .bar-label.pck { color: var(--orange); font-weight: 700; }
+  .bar-track {
+    position: relative;
+    height: 22px;
+    background: var(--grey-100);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, var(--navy-light) 0%, var(--navy) 100%);
+    border-radius: 3px;
+  }
+  .bar-fill.benchmark {
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-dark) 100%);
+  }
+  .bar-fill.pck {
+    background: linear-gradient(90deg, var(--gold) 0%, var(--orange) 100%);
+  }
+  .bar-value {
+    font-size: 12px;
+    color: var(--grey-700);
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+  .chart-axis {
+    display: grid;
+    grid-template-columns: 150px 1fr 130px;
+    gap: 14px;
+    margin-top: 6px;
+    font-size: 10.5px;
+    color: var(--grey-500);
+  }
+  .chart-axis .axis-ticks {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1px;
+  }
+
+  /* Tables */
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+    font-size: 12.5px;
+  }
+  table.data thead {
+    background: var(--navy);
+    color: #fff;
+  }
+  table.data th {
+    padding: 11px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  table.data th:not(:first-child) { text-align: right; }
+  table.data td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--grey-100);
+    font-variant-numeric: tabular-nums;
+  }
+  table.data td:not(:first-child) { text-align: right; }
+  table.data tr:hover { background: var(--grey-50); }
+  table.data tr.highlight {
+    background: linear-gradient(90deg, #fff8e7 0%, #fff 100%);
+  }
+  table.data tr.highlight td { font-weight: 600; color: var(--navy); }
+  table.data tr.highlight td:first-child { color: var(--orange); }
+  table.data tr.pck-row {
+    background: var(--navy-dark);
+  }
+  table.data tr.pck-row td {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: none;
+  }
+  table.data tr.pck-row td:first-child { color: var(--gold-light); }
+
+  .table-note {
+    font-size: 11.5px;
+    color: var(--grey-500);
+    margin: 6px 2px 0;
+    font-style: italic;
+  }
+
+  /* Grade cards */
+  .grade-section { margin-bottom: 28px; }
+  .grade-section h4 {
+    margin: 0 0 14px;
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: 700;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+  }
+  .grade-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .grade-card {
+    background: linear-gradient(180deg, #fff 0%, var(--grey-50) 100%);
+    border: 1px solid var(--grey-200);
+    border-top: 3px solid var(--navy);
+    border-radius: 6px;
+    padding: 16px 14px;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .grade-card.tier-1 { border-top-color: #94a3b8; }
+  .grade-card.tier-2 { border-top-color: var(--navy-light); }
+  .grade-card.tier-3 { border-top-color: var(--navy); }
+  .grade-card.tier-4 { border-top-color: var(--gold); background: linear-gradient(180deg, #fffdf5 0%, #fff8e7 100%); }
+  .grade-card .grade-code {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--grey-500);
+    text-transform: uppercase;
+  }
+  .grade-card .grade-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 2px 0 8px;
+  }
+  .grade-card .grade-tenure {
+    font-size: 11.5px;
+    color: var(--grey-500);
+    margin-bottom: 12px;
+  }
+  .grade-card .grade-stat {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed var(--grey-200);
+  }
+  .grade-card .grade-stat:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+  .grade-card .stat-label {
+    font-size: 10.5px;
+    color: var(--grey-500);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 2px;
+  }
+  .grade-card .stat-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    font-variant-numeric: tabular-nums;
+  }
+  .grade-card.tier-4 .stat-value { color: var(--orange); }
+  .grade-card .stat-value.ttc-top {
+    color: var(--orange);
+    font-size: 14px;
+  }
+
+  /* Benefits */
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .benefit-card {
+    background: var(--grey-50);
+    border: 1px solid var(--grey-200);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .benefit-card .icon {
+    width: 30px;
+    height: 30px;
+    background: var(--navy);
+    color: var(--gold-light);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .benefit-card .b-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .benefit-card .b-tiers {
+    font-size: 11.5px;
+    color: var(--grey-700);
+    line-height: 1.55;
+  }
+  .benefit-card .b-tiers span.role {
+    color: var(--grey-500);
+    font-weight: 600;
+    margin-right: 4px;
+  }
+
+  /* Callout */
+  .callout {
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+  }
+  .callout-risk {
+    background: var(--warn-bg);
+    border-left: 4px solid var(--warn-border);
+  }
+  .callout-decision {
+    background: var(--success-bg);
+    border-left: 4px solid var(--success-border);
+  }
+  .callout h4 {
+    margin: 0 0 10px;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+  }
+  .callout-risk h4 { color: var(--orange); }
+  .callout-decision h4 { color: var(--green-soft); }
+  .callout ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 13px;
+    color: var(--grey-700);
+  }
+  .callout li { margin-bottom: 6px; }
+  .callout li strong { color: var(--grey-900); }
+
+  /* Footer */
+  .footer {
+    background: var(--navy-dark);
+    color: var(--grey-300);
+    padding: 28px 56px;
+    font-size: 11.5px;
+  }
+  .footer .brand {
+    color: var(--gold-light);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .footer .sources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 20px;
+  }
+  .footer .sources h5 {
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 0 0 8px;
+    font-weight: 700;
+  }
+  .footer .sources ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11.5px;
+    line-height: 1.7;
+  }
+  .footer .sources a {
+    color: var(--grey-300);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--grey-500);
+  }
+  .footer .sources a:hover {
+    color: var(--gold-light);
+    border-bottom-color: var(--gold-light);
+  }
+  .footer .legal {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 14px;
+    font-size: 10.5px;
+    color: var(--grey-500);
+    text-align: center;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .header, .section, .footer { padding-left: 28px; padding-right: 28px; }
+    .grade-grid { grid-template-columns: repeat(2, 1fr); }
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer .sources { grid-template-columns: 1fr; }
+    .bar-row { grid-template-columns: 110px 1fr 100px; gap: 10px; }
+    .chart-axis { grid-template-columns: 110px 1fr 100px; gap: 10px; }
+    .header h1 { font-size: 24px; }
+  }
+
+  /* Print */
+  @media print {
+    body { background: #fff; font-size: 11px; }
+    .page { box-shadow: none; max-width: 100%; }
+    .section { padding: 22px 32px; page-break-inside: avoid; }
+    .header { padding: 28px 32px; }
+    .grade-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .grade-card { padding: 10px 8px; }
+    .benefits-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .footer { padding: 18px 32px; }
+    @page { size: A4; margin: 12mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============= HEADER ============= -->
+  <header class="header">
+    <div class="eyebrow">Compensation Benchmark · Confidential</div>
+    <h1>PCK Compensation Benchmark</h1>
+    <div class="subtitle">Relationship Manager &amp; Team Leader — Non-Bank Lending Sector</div>
+    <div class="meta">
+      <div class="meta-item">
+        <div class="label">Client</div>
+        <div class="value">PCK (Non-Bank Lending)</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Prepared by</div>
+        <div class="value">Northworks HR Advisory</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Date</div>
+        <div class="value">16 พฤษภาคม 2026</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Status</div>
+        <div class="value">Draft v1 — Leadership Review</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============= EXECUTIVE SUMMARY ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">1</span>Executive Summary</h2>
+    <p class="section-sub">Key findings และ recommendations สรุปสำหรับ PCK leadership</p>
+
+    <div class="exec-summary">
+      <h3>Key Findings</h3>
+      <ul>
+        <li><strong>NTL คือ direct benchmark</strong> — frontline RM base 16K–35K, Team Leader 35K–50K; PCK ต้องวาง position <strong>เหนือ NTL +10–25%</strong> เพื่อสะท้อน premium positioning และดึง talent mindset แบบ MLM/FA Prime</li>
+        <li><strong>Recommended RM structure</strong>: 4 grades (RM-1 ถึง RM-4), base 18K–42K, TTC top-performer สูงถึง <strong>฿2.2M/ปี</strong> — เห็น path 100K+/เดือนได้ภายใน 3 ปี</li>
+        <li><strong>Recommended TL structure</strong>: 4 grades (TL-1 → AM-1), base 45K–120K, TTC top-performer Branch Manager สูงถึง <strong>฿3.0M+/ปี</strong></li>
+        <li><strong>Benefits ต้อง competitive</strong> — PVD 7.5%, OPD 15K–30K/ปี, ค่าน้ำมัน 8K–12K, insurance broker license sponsor; bonus 3 เดือน std / สูงสุด 10–12 เดือนสำหรับ top performer (mirror NTL pattern)</li>
+      </ul>
+      <div class="critical-flag">
+        <span class="flag-label">Critical Flag</span>
+        ตัวเลข commission % และ TTC ของคู่เทียบส่วนใหญ่เป็น <strong>estimate จาก public data</strong> (job ads, Pantip, Indeed) — ต้องการ insider validation จาก ex-NTL/Krungsri Auto/SAWAD 3–4 คน + HRM Director sign-off ก่อน finalize positioning premium กับ PCK
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= MARKET POSITIONING CHART ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">2</span>Market Positioning — Base Salary Bands</h2>
+    <p class="section-sub">เปรียบเทียบ base salary range (THB/เดือน) — Bangkok metro · scale 0–120K</p>
+
+    <div class="chart-block">
+      <h3 class="chart-title">Frontline RM — Mid Level (1–3 yr experience)</h3>
+      <p class="chart-caption">Range จาก low → high ของแต่ละบริษัท · ตัวเลขเป็น THB ต่อเดือน</p>
+
+      <!-- RM Bars: max scale = 45K for visual purposes -->
+      <div class="bar-row">
+        <div class="bar-label">KTC</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 48.9%; width: 22.2%;"></div></div>
+        <div class="bar-value">22K – 32K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label benchmark">NTL <span style="font-size:9px;color:var(--gold);">(BENCHMARK)</span></div>
+        <div class="bar-track"><div class="bar-fill benchmark" style="left: 44.4%; width: 17.8%;"></div></div>
+        <div class="bar-value">20K – 28K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Krungsri Auto</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 44.4%; width: 17.8%;"></div></div>
+        <div class="bar-value">20K – 28K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">SAWAD</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 37.8%; width: 11.1%;"></div></div>
+        <div class="bar-value">17K – 22K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">เงินเทอร์โบ</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 33.3%; width: 11.1%;"></div></div>
+        <div class="bar-value">15K – 20K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">AEON</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 33.3%; width: 11.1%;"></div></div>
+        <div class="bar-value">15K – 20K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">MTC</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 31.1%; width: 8.9%;"></div></div>
+        <div class="bar-value">14K – 18K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label pck">PCK (Target)</div>
+        <div class="bar-track"><div class="bar-fill pck" style="left: 48.9%; width: 17.8%;"></div></div>
+        <div class="bar-value">22K – 30K</div>
+      </div>
+      <div class="chart-axis">
+        <div></div>
+        <div class="axis-ticks">
+          <span>0</span><span>10K</span><span>20K</span><span>30K</span><span>40K</span><span>45K+</span>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="chart-block" style="margin-top:36px;">
+      <h3 class="chart-title">Team Leader / Branch Manager — Bangkok</h3>
+      <p class="chart-caption">Range Team Leader (5–10 RM) ถึง Branch Manager (P&amp;L) · scale 0–140K</p>
+
+      <!-- TL Bars: max scale = 140K -->
+      <div class="bar-row">
+        <div class="bar-label">KTC</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 28.6%; width: 28.6%;"></div></div>
+        <div class="bar-value">40K – 80K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label benchmark">NTL <span style="font-size:9px;color:var(--gold);">(BENCHMARK)</span></div>
+        <div class="bar-track"><div class="bar-fill benchmark" style="left: 25%; width: 17.9%;"></div></div>
+        <div class="bar-value">35K – 60K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">Krungsri Auto</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 25%; width: 21.4%;"></div></div>
+        <div class="bar-value">35K – 65K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">SAWAD</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 20%; width: 15.7%;"></div></div>
+        <div class="bar-value">28K – 50K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">AEON</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 21.4%; width: 17.9%;"></div></div>
+        <div class="bar-value">30K – 55K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label">MTC</div>
+        <div class="bar-track"><div class="bar-fill" style="left: 15.7%; width: 14.3%;"></div></div>
+        <div class="bar-value">22K – 42K</div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label pck">PCK (Target)</div>
+        <div class="bar-track"><div class="bar-fill pck" style="left: 32.1%; width: 28.6%;"></div></div>
+        <div class="bar-value">45K – 85K</div>
+      </div>
+      <div class="chart-axis">
+        <div></div>
+        <div class="axis-ticks">
+          <span>0</span><span>30K</span><span>60K</span><span>90K</span><span>120K</span><span>140K</span>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <p class="table-note">หมายเหตุ: JobsDB Bangkok average — Team Leader ฿53,750 · Branch Manager 38K–55K · Rayong/EEC Branch Manager ~฿112,500 (กรณีพิเศษ industrial cluster)</p>
+  </section>
+
+  <!-- ============= RM COMPARISON TABLE ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">3</span>RM Compensation — Full Comparison</h2>
+    <p class="section-sub">Base + variable + bonus annual totals (THB) · Mid-level RM, Bangkok</p>
+
+    <table class="data">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Base / mo</th>
+          <th>TTC Low</th>
+          <th>TTC Average</th>
+          <th>TTC Top 10–20%</th>
+          <th>Bonus (mo)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>NTL (benchmark)</td>
+          <td>20K – 28K</td>
+          <td>~320K</td>
+          <td>480K – 600K</td>
+          <td>900K – 1.3M</td>
+          <td>3 (top 10–12)</td>
+        </tr>
+        <tr>
+          <td>Krungsri Auto</td>
+          <td>20K – 28K</td>
+          <td>~300K</td>
+          <td>450K – 550K</td>
+          <td>800K – 1.1M</td>
+          <td>3–4</td>
+        </tr>
+        <tr>
+          <td>KTC</td>
+          <td>22K – 32K</td>
+          <td>~330K</td>
+          <td>520K – 650K</td>
+          <td>900K – 1.4M</td>
+          <td>3–6 banking</td>
+        </tr>
+        <tr>
+          <td>SAWAD</td>
+          <td>17K – 22K</td>
+          <td>~230K</td>
+          <td>340K – 420K</td>
+          <td>600K – 900K</td>
+          <td>2–3</td>
+        </tr>
+        <tr>
+          <td>AEON</td>
+          <td>15K – 20K</td>
+          <td>~220K</td>
+          <td>330K – 420K</td>
+          <td>600K – 850K</td>
+          <td>2–4</td>
+        </tr>
+        <tr>
+          <td>เงินเทอร์โบ</td>
+          <td>15K – 20K</td>
+          <td>~200K</td>
+          <td>290K – 360K</td>
+          <td>500K – 700K</td>
+          <td>2–4</td>
+        </tr>
+        <tr>
+          <td>MTC</td>
+          <td>14K – 18K</td>
+          <td>~170K</td>
+          <td>250K – 320K</td>
+          <td>450K – 600K</td>
+          <td>1–3</td>
+        </tr>
+        <tr class="pck-row">
+          <td>PCK (Recommended)</td>
+          <td>22K – 30K</td>
+          <td>~360K</td>
+          <td>550K – 700K</td>
+          <td>1.0M – 1.5M</td>
+          <td>3 (top 10)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note">Commission % และ TTC ของคู่เทียบเป็น estimate จาก public data (job ads, Pantip, Indeed) · ต้อง validate กับ insider sourcing</p>
+  </section>
+
+  <!-- ============= TL COMPARISON TABLE ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">4</span>Team Leader / Branch Manager — Full Comparison</h2>
+    <p class="section-sub">Annual TTC (THB), Bangkok · Team Leader 5–10 RM ถึง Branch Manager full P&amp;L</p>
+
+    <table class="data">
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>TL Base / mo</th>
+          <th>BM Base / mo</th>
+          <th>TTC Average</th>
+          <th>TTC Top Performer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight">
+          <td>NTL (benchmark)</td>
+          <td>35K – 50K</td>
+          <td>40K – 60K</td>
+          <td>750K – 950K</td>
+          <td>1.4M – 2.0M</td>
+        </tr>
+        <tr>
+          <td>Krungsri Auto</td>
+          <td>35K – 50K</td>
+          <td>45K – 65K</td>
+          <td>850K – 1.1M</td>
+          <td>1.5M – 2.2M</td>
+        </tr>
+        <tr>
+          <td>KTC</td>
+          <td>40K – 60K</td>
+          <td>55K – 80K</td>
+          <td>1.0M – 1.3M</td>
+          <td>1.8M – 2.8M</td>
+        </tr>
+        <tr>
+          <td>SAWAD</td>
+          <td>28K – 40K</td>
+          <td>35K – 50K</td>
+          <td>600K – 800K</td>
+          <td>1.1M – 1.5M</td>
+        </tr>
+        <tr>
+          <td>AEON</td>
+          <td>30K – 42K</td>
+          <td>38K – 55K</td>
+          <td>~700K – 900K</td>
+          <td>1.2M – 1.7M</td>
+        </tr>
+        <tr>
+          <td>MTC</td>
+          <td>22K – 32K</td>
+          <td>28K – 42K</td>
+          <td>480K – 650K</td>
+          <td>850K – 1.2M</td>
+        </tr>
+        <tr class="pck-row">
+          <td>PCK (Recommended)</td>
+          <td>45K – 55K</td>
+          <td>65K – 85K</td>
+          <td>880K – 1.4M</td>
+          <td>2.2M – 3.0M+</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="table-note">PCK BM base position +30–40% เหนือ NTL — aggressive แต่ defensible หาก PCK target deal size ใหญ่กว่า NTL จริง · JobsDB Bangkok Team Leader avg ฿53,750</p>
+  </section>
+
+  <!-- ============= PCK RECOMMENDED GRADE STRUCTURE ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">5</span>PCK Recommended Grade Structure</h2>
+    <p class="section-sub">Design principle: base <strong>+15% เหนือ NTL</strong>, variable <strong>+25–35% เหนือ NTL</strong> · TTC top performer เห็น path 100K+/เดือนภายใน 2–3 ปี</p>
+
+    <!-- RM Grades -->
+    <div class="grade-section">
+      <h4>Relationship Manager — 4 Grades</h4>
+      <div class="grade-grid">
+        <div class="grade-card tier-1">
+          <div class="grade-code">RM-1</div>
+          <div class="grade-title">Trainee / Junior</div>
+          <div class="grade-tenure">0–6 เดือน</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">18K – 22K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">30–50%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">330K – 360K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~480K</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-2">
+          <div class="grade-code">RM-2</div>
+          <div class="grade-title">RM</div>
+          <div class="grade-tenure">6 mo – 2 yr</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">22K – 28K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">60–100%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">480K – 620K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~900K</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-3">
+          <div class="grade-code">RM-3</div>
+          <div class="grade-title">Senior RM</div>
+          <div class="grade-tenure">2–4 yr</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">28K – 35K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">80–150%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">680K – 950K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~1.5M</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-4">
+          <div class="grade-code">RM-4</div>
+          <div class="grade-title">Key / Lead RM</div>
+          <div class="grade-tenure">4+ yr</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">35K – 42K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">100–180%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">900K – 1.3M</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~2.2M</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TL Grades -->
+    <div class="grade-section">
+      <h4>Team Leader / Branch Manager — 4 Grades</h4>
+      <div class="grade-grid">
+        <div class="grade-card tier-1">
+          <div class="grade-code">TL-1</div>
+          <div class="grade-title">Team Leader</div>
+          <div class="grade-tenure">5–8 RM</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">45K – 55K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">50–80%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">880K – 1.1M</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~1.7M</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-2">
+          <div class="grade-code">TL-2</div>
+          <div class="grade-title">Senior TL / Asst BM</div>
+          <div class="grade-tenure">8–12 RM</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">55K – 65K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">60–100%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">1.1M – 1.4M</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">~2.2M</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-3">
+          <div class="grade-code">BM-1</div>
+          <div class="grade-title">Branch Manager</div>
+          <div class="grade-tenure">Full P&amp;L</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">65K – 85K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">70–120%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">1.4M – 1.9M</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">3.0M+</div>
+          </div>
+        </div>
+
+        <div class="grade-card tier-4">
+          <div class="grade-code">AM-1</div>
+          <div class="grade-title">Area Manager</div>
+          <div class="grade-tenure">Multi-branch</div>
+          <div class="grade-stat">
+            <div class="stat-label">Base / mo</div>
+            <div class="stat-value">85K – 120K</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">Variable</div>
+            <div class="stat-value">80–150%</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Target</div>
+            <div class="stat-value">1.9M – 2.8M</div>
+          </div>
+          <div class="grade-stat">
+            <div class="stat-label">TTC Top</div>
+            <div class="stat-value ttc-top">4.5M+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= BENEFITS ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">6</span>Recommended Benefits Package</h2>
+    <p class="section-sub">PCK target — competitive กับ NTL upper-band และ Krungsri Auto bank-grade</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="icon">฿</div>
+        <div class="b-title">Provident Fund (PVD)</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>5% (2 yr) → 7.5% (5 yr)</div>
+          <div><span class="role">TL:</span>7.5%</div>
+          <div><span class="role">BM:</span>7.5%</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">+</div>
+        <div class="b-title">ประกันสุขภาพ OPD</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>15,000 / ปี</div>
+          <div><span class="role">TL:</span>25,000 / ปี</div>
+          <div><span class="role">BM:</span>30,000 + family</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">⌂</div>
+        <div class="b-title">ประกันสุขภาพ IPD</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>30,000 / ครั้ง</div>
+          <div><span class="role">TL:</span>50,000 / ครั้ง</div>
+          <div><span class="role">BM:</span>80,000 + family</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">⛟</div>
+        <div class="b-title">ค่าน้ำมัน / Car Allowance</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>8,000 / เดือน</div>
+          <div><span class="role">TL:</span>12,000 หรือ company car</div>
+          <div><span class="role">BM:</span>Company car + 5K fuel</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">☏</div>
+        <div class="b-title">ค่าโทรศัพท์ + SIM</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>1,500 + company SIM</div>
+          <div><span class="role">TL:</span>2,000 / เดือน</div>
+          <div><span class="role">BM:</span>3,000 / เดือน</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">★</div>
+        <div class="b-title">Annual Bonus (Target)</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>3 เดือน · top up to 10</div>
+          <div><span class="role">TL:</span>4 เดือน · top up to 10</div>
+          <div><span class="role">BM:</span>5 เดือน · top up to 12</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">✎</div>
+        <div class="b-title">Insurance Broker License</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>Sponsor + paid study leave</div>
+          <div><span class="role">TL:</span>Sponsor + renewal</div>
+          <div><span class="role">BM:</span>Sponsor + renewal</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">⌇</div>
+        <div class="b-title">Annual Leave</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>10 วัน (yr 1) → 15 (yr 5+)</div>
+          <div><span class="role">TL:</span>15 วัน</div>
+          <div><span class="role">BM:</span>18 วัน</div>
+        </div>
+      </div>
+
+      <div class="benefit-card">
+        <div class="icon">♔</div>
+        <div class="b-title">Education Fund (บุตร) + ทันตกรรม</div>
+        <div class="b-tiers">
+          <div><span class="role">RM:</span>5K/บุตร + ทันต 5K</div>
+          <div><span class="role">TL:</span>10K/บุตร + ทันต 7.5K</div>
+          <div><span class="role">BM:</span>15K/บุตร + ทันต 10K</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= OPEN QUESTIONS & RISKS ============= -->
+  <section class="section">
+    <h2 class="section-title"><span class="num">7</span>Open Questions, Risks &amp; Decisions Needed</h2>
+    <p class="section-sub">รายการที่ต้อง validate และ decisions ที่ต้องการ leadership sign-off</p>
+
+    <div class="callout callout-risk">
+      <h4>⚠ Data Limitations &amp; Risks</h4>
+      <ul>
+        <li><strong>Commission % ของคู่เทียบทุกบริษัท</strong> = estimate จาก public data — บริษัทไม่เปิด structure ละเอียด</li>
+        <li><strong>TTC top-performer</strong> = upper-bound estimate · ไม่มี named source · ต้อง validate</li>
+        <li><strong>MTC, Turbo, AEON</strong> ข้อมูลค่อนข้าง thin — JD ไม่ public เต็ม</li>
+        <li><strong>KTC</strong> ใช้ banking-grade benchmark proxy — อาจไม่แข่งตรงกับ PCK ถ้า PCK ไม่ทำ credit card</li>
+        <li><strong>Bangkok bias</strong> — upcountry needs separate validation; Rayong/EEC เป็น special case (Branch Mgr avg ฿112,500)</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-decision">
+      <h4>✓ Strategic Decisions Needed (Leadership Sign-Off)</h4>
+      <ul>
+        <li><strong>Positioning premium</strong>: +15% หรือ +25% above NTL? (recommendation: +15% mid-band, +25% top-band)</li>
+        <li><strong>Commission cap</strong>: uncapped vs ceiling? (recommendation: uncapped + accelerator tier)</li>
+        <li><strong>ESOP for BM+</strong>: ใส่ stock option หรือไม่? (depends on PCK IPO timeline)</li>
+        <li><strong>License clawback</strong>: ลาออกใน 1 ปีต้องคืนค่าสอบ broker? (recommendation: pro-rata 12 เดือน)</li>
+        <li><strong>RM-referred-RM bonus</strong> (MLM-style)? (recommendation: pilot 6 เดือน, evaluate)</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-decision">
+      <h4>↻ Validation Actions (Operational — HR Officer)</h4>
+      <ul>
+        <li>Insider interview: ex-NTL / ex-Krungsri Auto / ex-SAWAD RM + TL (3–4 calls, week 1–2)</li>
+        <li>Pull <strong>TIDLOR 56-1 One Report 2024</strong> → sanity check avg comp per head</li>
+        <li>Download <strong>Adecco Salary Guide 2026</strong> ตัวเต็ม → cross-reference</li>
+        <li>Compile <strong>JD draft</strong> RM + TL ให้ match grade structure ใหม่</li>
+        <li>(Optional) Mercer/Hay custom benchmark report — ~150K–300K บาท</li>
+      </ul>
+    </div>
+
+    <div class="callout callout-decision">
+      <h4>? Inputs Needed from PCK</h4>
+      <ul>
+        <li><strong>Year 1 headcount target</strong> (จำนวน RM + TL ที่จะรับ) → ใช้คำนวณ budget รวม</li>
+        <li><strong>Average ticket size</strong> สมมติฐาน → ใช้ verify commission % เหมาะสม</li>
+        <li><strong>Branch expansion plan</strong> (Bangkok-only หรือ upcountry rollout) → ใช้ stratify grade structure</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============= FOOTER WITH SOURCES ============= -->
+  <footer class="footer">
+    <div class="brand">Northworks HR Advisory · Sources</div>
+    <div class="sources">
+      <div>
+        <h5>Job Boards &amp; Company Sites</h5>
+        <ul>
+          <li><a href="https://th.jobsdb.com/Ngern-Tid-Lor-jobs" target="_blank">JobsDB — NTL jobs Bangkok</a></li>
+          <li><a href="https://www.jobthai.com/th/company/147449" target="_blank">JobThai — NTL company page</a></li>
+          <li><a href="https://www.tidlor.com/th/careers/search" target="_blank">TIDLOR Careers</a></li>
+          <li><a href="https://jobs.krungsri.com/" target="_blank">Krungsri Career Portal</a></li>
+          <li><a href="https://www.sawad.co.th/career/" target="_blank">SAWAD Careers</a></li>
+          <li><a href="https://muangthaicap.com/en/careers/" target="_blank">MTC Careers</a></li>
+          <li><a href="https://careers.turbo.co.th/branch" target="_blank">Turbo Careers</a></li>
+          <li><a href="https://www.jobthai.com/th/company/61706" target="_blank">AEON — JobThai</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Market Salary References</h5>
+        <ul>
+          <li><a href="https://th.jobsdb.com/career-advice/role/relationship-manager/salary" target="_blank">JobsDB — RM Salary TH</a></li>
+          <li><a href="https://th.jobsdb.com/th/career-advice/role/team-leader/salary" target="_blank">JobsDB — Team Leader Salary</a></li>
+          <li><a href="https://th.jobsdb.com/th/career-advice/role/branch-manager/salary" target="_blank">JobsDB — Branch Manager</a></li>
+          <li><a href="https://th.jobsdb.com/th/career-advice/role/credit-officer/salary" target="_blank">JobsDB — Credit Officer</a></li>
+          <li><a href="https://th.jobsdb.com/th/career-advice/role/district-manager/salary" target="_blank">JobsDB — District/Area Manager</a></li>
+          <li><a href="https://www.adecco.com/en-th/news-events/salaryguide-2026-press-release" target="_blank">Adecco Salary Guide 2026</a></li>
+          <li><a href="https://www.deloitte.com/southeast-asia/en/services/consulting/perspectives/th-salary-policies-survey-2025.html" target="_blank">Deloitte Salary Policies 2025</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Insider &amp; Mindset References</h5>
+        <ul>
+          <li><a href="https://www.yousayhrsay.com/company/yousay/" target="_blank">YouSayHRsay — NTL reviews</a></li>
+          <li><a href="https://th.indeed.com/cmp/" target="_blank">Indeed Thailand — NTL</a></li>
+          <li><a href="https://pantip.com/topic/41450161" target="_blank">Pantip — NTL Branch Sales</a></li>
+          <li><a href="https://pantip.com/topic/38025142" target="_blank">Pantip — MTC benefits</a></li>
+          <li><a href="https://pantip.com/topic/38715719" target="_blank">Pantip — AEON credit officer</a></li>
+          <li><a href="https://aiayourgift.com/apply-for-life-insurance-agent-aia/" target="_blank">AIA FA Prime — mindset ref</a></li>
+          <li><a href="https://www.tidlorinvestor.com/th/downloads/form-56-1-one-report" target="_blank">TIDLOR 56-1 One Report</a></li>
+          <li><a href="https://market.sec.or.th/public/idisc/en/" target="_blank">SEC Thailand iDISC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      Confidential — Prepared for PCK leadership review · Draft v1 · 16 May 2026 · © Northworks
+      &nbsp;|&nbsp; This document contains estimates from public data; validation required before final positioning decisions.
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
