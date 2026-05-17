@@ -15,27 +15,27 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 **Prepared by:** Northworks HR Advisory
 **Date:** 16 พฤษภาคม 2026
-**Status:** Draft v1 — for leadership review
+**Status:** Draft v2 — parity approach revised; for leadership review
 
 ---
 
 ## ทำไมเรื่องนี้สำคัญ
 
-**PCK ไม่ใช่แค่ "อีกบริษัทสินเชื่อหนึ่ง"** — positioning premium เหนือ NTL
+**PCK ต้องแข่งดึง talent กับ market leader Ngern Tid Lor โดยตรง** — pay parity, ชนะด้วย non-pay differentiator
 
 - **ลูกค้า up-market** — ticket size ใหญ่กว่า, asset quality ดีกว่า, ปิดยากกว่า
 - **ต้องการ talent คนละ profile** — hunter mindset แบบ MLM / FA Prime / ตัวแทนประกัน
-- **Compensation จึงต้องเหนือ frontline NTL จริง** — target **+10–25% TTC** (mix base + variable + benefits)
+- **Strategy:** **match Ngern Tid Lor frontline benchmark** ที่ upper band ทุก grade (ไม่จ่ายเกิน) แล้วใช้ **career path speed + transparency + benefits competitive + brand** เป็นตัวดึงคน
 
-> ถ้าจ่ายเท่า NTL → ได้คนเท่า NTL → ปิด case premium ไม่ได้
+> Pay parity → control cost structure → ชนะด้วย experience และ growth path ไม่ใช่ราคา
 
 ---
 
 ## Methodology
 
 **ใครเทียบกับใคร**
-- Primary benchmark: **NTL (เงินติดล้อ)** — direct competitor
-- Secondary: Krungsri Auto, SAWAD, MTC, เงินเทอร์โบ, KTC, AEON
+- Primary benchmark: **Ngern Tid Lor (เงินติดล้อ)** — direct competitor; PCK วาง parity ที่ upper band
+- Secondary: Krungsri Auto, SAWAD, MTC, เงินเทอร์โบ, AEON
 - Aspirational mindset reference: AIA FA Prime / MDRT
 
 **แหล่งข้อมูล**
@@ -54,15 +54,14 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | บริษัท | Mid RM Base (THB/mo) | Tier |
 |---|---|---|
-| KTC | 22,000 – 32,000 | Banking-grade |
-| **NTL (primary benchmark)** | **20,000 – 28,000** | **Premium non-bank** |
+| **Ngern Tid Lor (primary benchmark)** | **20,000 – 28,000** | **Premium non-bank** |
 | Krungsri Auto | 20,000 – 28,000 | Premium non-bank |
 | SAWAD | 17,000 – 22,000 | Mid-tier |
 | เงินเทอร์โบ | 15,000 – 20,000 | Mid-tier |
 | AEON | 15,000 – 20,000 | Mid-tier |
 | MTC | 14,000 – 18,000 | Lean-tier |
 
-**Insight:** NTL & Krungsri Auto = ceiling ของ frontline lending — PCK ต้องอยู่ **เหนือ** กลุ่มนี้
+**Insight:** Ngern Tid Lor & Krungsri Auto = ceiling ของ frontline lending — PCK วาง **ที่ upper band ของกลุ่มนี้** (ไม่จ่ายเกิน)
 
 ---
 
@@ -70,13 +69,13 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | บริษัท | Entry (0–1 yr) | Mid (1–3 yr) | Senior (3–5+ yr) |
 |---|---|---|---|
-| **NTL** | 16,000 – 20,000 | 20,000 – 28,000 | 28,000 – 35,000 |
+| **Ngern Tid Lor** | 16,000 – 20,000 | 20,000 – 28,000 | 28,000 – 35,000 |
 | Krungsri Auto | 15,000 – 20,000 | 20,000 – 28,000 | 28,000 – 35,000 |
 | SAWAD | 12,000 – 17,000 | 17,000 – 22,000 | 22,000 – 28,000 |
 | MTC | 11,000 – 14,000 | 14,000 – 18,000 | 18,000 – 22,000 |
-| **PCK target** | **18,000 – 25,000** | **22,000 – 30,000** | **28,000 – 38,000** |
+| **PCK target** | **18,000 – 20,000** | **24,000 – 28,000** | **32,000 – 35,000** |
 
-**Positioning:** PCK Mid RM = **+10–17% เหนือ NTL** | PCK Senior = **+15–25% เหนือ NTL upper band**
+**Positioning:** PCK = **parity ที่ upper band ของ Ngern Tid Lor ทุก grade** (ไม่เกิน Ngern Tid Lor upper bound)
 
 ---
 
@@ -84,15 +83,15 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | บริษัท | Low Perf | Avg Perf | Top 10–20% |
 |---|---|---|---|
-| KTC | 330K | 520K – 650K | 900K – 1.4M |
-| **NTL (Mid RM)** | **320K** | **480K – 600K** | **900K – 1.3M** |
+| **Ngern Tid Lor (Mid RM)** | **320K** | **480K – 600K** | **900K – 1.3M** |
 | Krungsri Auto | 300K | 450K – 550K | 800K – 1.1M |
 | SAWAD | 230K | 340K – 420K | 600K – 900K |
 | AEON | 220K | 330K – 420K | 600K – 850K |
 | MTC | 170K | 250K – 320K | 450K – 600K |
+| **PCK (Mid RM target)** | ~310K | ~470K – 590K | ~850K – 1.3M |
 | **AIA FA Prime** *(mindset ref)* | 360K | 600K – 900K | 1.5M – 5M+ |
 
-**Insight:** PCK ต้องการ TTC top-performer **≥ 1.3M** เพื่อแข่งกับ NTL + ดึง FA-aspirant
+**Insight:** PCK TTC top-performer ใกล้เคียง Ngern Tid Lor (~1.3M) — แข่งด้วย parity, ไม่ใช่ premium
 
 ---
 
@@ -100,15 +99,14 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | บริษัท | Team Leader | Branch Manager | Area Manager |
 |---|---|---|---|
-| KTC | 40K – 60K | 55K – 80K | 80K – 120K |
-| **NTL** | **35K – 50K** | **40K – 60K** | **50K – 80K** |
+| **Ngern Tid Lor** | **35K – 50K** | **40K – 60K** | **50K – 80K** |
 | Krungsri Auto | 35K – 50K | 45K – 65K | 60K – 90K |
 | SAWAD | 28K – 40K | 35K – 50K | 50K – 75K |
 | MTC | 22K – 32K | 28K – 42K | 40K – 60K |
 | **JobsDB Bangkok avg** | ~฿53,750 | 38K – 55K | ~฿45,500 |
-| **PCK target** | **45K – 55K** | **65K – 85K** | **85K – 120K** |
+| **PCK target** | **45K – 50K** | **55K – 60K** | **70K – 80K** |
 
-**Positioning:** PCK TL = **+20–28% เหนือ NTL** | PCK BM = **+30–40% เหนือ NTL** (aggressive แต่ defensible)
+**Positioning:** PCK = **parity ที่ upper band ของ Ngern Tid Lor ทุก grade** (ไม่เกิน Ngern Tid Lor upper bound)
 
 ---
 
@@ -116,14 +114,14 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | บริษัท | Low | Average | High Performer |
 |---|---|---|---|
-| KTC Team Lead | 700K | 1.0M – 1.3M | 1.8M – 2.8M |
 | Krungsri Auto BM | 600K | 850K – 1.1M | 1.5M – 2.2M |
-| **NTL Team Leader** | **550K** | **750K – 950K** | **1.4M – 2.0M** |
+| **Ngern Tid Lor Team Leader** | **550K** | **750K – 950K** | **1.4M – 2.0M** |
 | SAWAD Branch Mgr | 450K | 600K – 800K | 1.1M – 1.5M |
 | MTC Branch Mgr | 350K | 480K – 650K | 850K – 1.2M |
+| **PCK Team Leader (target)** | ~545K | ~755K – 940K | ~1.5M |
 
-**Mechanics ปกติของ TL variable**
-- Override commission 0.1–0.3% ของยอดทีม
+**Mechanics ปกติของ TL variable** (PCK mirror Ngern Tid Lor)
+- Override commission 0.1–0.15% ของยอดทีม (Ngern Tid Lor range 0.1–0.3%)
 - Team KPI bonus quarterly (~10–20% of base)
 - Annual bonus 3–12 เดือน (avg 3, top 10–12)
 
@@ -139,7 +137,7 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 | 4 | **Insurance broker license sponsor** | บริษัทออกค่าสอบ + paid study leave |
 | 5 | **Annual bonus** | 3 เดือน std, top performer 10–12 เดือน |
 
-**Differentiator ของ PCK ที่แนะนำ:** PVD 7.5% เต็ม + OPD 15K-30K + ทันตกรรม + Education fund บุตร
+**PCK match Ngern Tid Lor benefits pattern:** PVD 5–7.5%, OPD 15K–25K, IPD 30K–50K, bonus 3 เดือน std + top 10–12 เดือน — ไม่ใส่อะไรเกิน Ngern Tid Lor
 
 ---
 
@@ -147,12 +145,12 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | Grade | Title | Tenure | Base (THB/mo) | Var. Target | TTC Target | TTC Top |
 |---|---|---|---|---|---|---|
-| **RM-1** | Trainee/Junior | 0–6 mo | 18K – 22K | 30–50% | 330K – 360K | 480K |
-| **RM-2** | RM | 6mo – 2yr | 22K – 28K | 60–100% | 480K – 620K | 900K |
-| **RM-3** | Senior RM | 2–4 yr | 28K – 35K | 80–150% | 680K – 950K | 1.5M |
-| **RM-4** | Key/Lead RM | 4+ yr | 35K – 42K | 100–180% | 900K – 1.3M | **2.2M** |
+| **RM-1** | Trainee/Junior | 0–6 mo | 18K – 20K | 20–35% | 260K – 290K | 400K |
+| **RM-2** | RM | 6mo – 2yr | 24K – 28K | 40–80% | 400K – 550K | 850K |
+| **RM-3** | Senior RM | 2–4 yr | 32K – 35K | 60–120% | 610K – 840K | 1.3M |
+| **RM-4** | Key/Lead RM | 4+ yr | 35K (cap) | 80–150% | 760K – 1.05M | **1.6M** |
 
-**Design principle:** base **+15% เหนือ NTL**, variable **+25–35% เหนือ NTL** → TTC top performer เห็น path 100K+/เดือน
+**Design principle:** **parity ที่ Ngern Tid Lor upper band** (ไม่เกิน Ngern Tid Lor Senior 35K) → TTC top performer ใกล้เคียง Ngern Tid Lor; mobility ผ่าน variable + bonus + promote ไป TL track
 
 ---
 
@@ -160,12 +158,12 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 | Grade | Title | Reports | Base (THB/mo) | Var. Target | TTC Target | TTC Top |
 |---|---|---|---|---|---|---|
-| **TL-1** | Team Leader | 5–8 RM | 45K – 55K | 50–80% | 880K – 1.1M | 1.7M |
-| **TL-2** | Senior TL / Asst BM | 8–12 RM | 55K – 65K | 60–100% | 1.1M – 1.4M | 2.2M |
-| **BM-1** | Branch Manager | Full branch P&L | 65K – 85K | 70–120% | 1.4M – 1.9M | **3.0M+** |
-| **AM-1** | Area Manager | Multi-branch | 85K – 120K | 80–150% | 1.9M – 2.8M | **4.5M+** |
+| **TL-1** | Team Leader | 5–8 RM | 45K – 50K | 40–70% | 755K – 940K | 1.5M |
+| **TL-2** | Senior TL / Asst BM | 8–12 RM | 50K – 55K | 50–80% | 900K – 1.1M | 1.8M |
+| **BM-1** | Branch Manager | Full branch P&L | 55K – 60K | 60–100% | 1.05M – 1.3M | **2.0M** |
+| **AM-1** | Area Manager | Multi-branch | 70K – 80K | 70–120% | 1.42M – 1.8M | **2.8M** |
 
-**Variable mechanics:** override 0.15% ของยอดทีม + team KPI 1–2 mo + annual bonus 3–10 เดือน
+**Variable mechanics:** override 0.1–0.15% ของยอดทีม + team KPI 1–2 mo + annual bonus 3–10 เดือน (match Ngern Tid Lor pattern)
 
 ---
 
@@ -173,10 +171,10 @@ footer: 'Northworks | Confidential — for PCK leadership discussion'
 
 ```
 Year 0–1 →  RM-1 (Trainee)            [Probation + license]
-Year 1–2 →  RM-2 (RM)                 [+10–15% jump]
-Year 2–4 →  RM-3 (Senior RM)          [+20–30% jump]
+Year 1–2 →  RM-2 (RM)                 [+15–25% jump]
+Year 2–4 →  RM-3 (Senior RM)          [+15–25% jump]
 Year 4–6 →  TL-1 (Team Leader)        [+30–50% jump]
-Year 6–8 →  BM-1 (Branch Manager)     [+20–35% jump]
+Year 6–8 →  BM-1 (Branch Manager)     [+15–25% jump]
 Year 8+  →  AM-1 (Area Manager)
 ```
 
@@ -208,10 +206,9 @@ Year 8+  →  AM-1 (Area Manager)
 - Commission % ของคู่เทียบทุกบริษัท = **estimate** (ไม่ public)
 - TTC top-performer = upper-bound estimate, ไม่มี named source
 - MTC / Turbo / AEON data ค่อนข้าง thin
-- KTC ใช้ banking benchmark proxy — อาจไม่แข่งตรงถ้า PCK ไม่ทำ credit card
 
 **Validation actions ก่อน finalize**
-1. **Insider interview** ex-NTL / ex-Krungsri Auto / ex-SAWAD (RM + TL อย่างละ 1) → confirm commission scheme
+1. **Insider interview** ex-Ngern Tid Lor / ex-Krungsri Auto / ex-SAWAD (RM + TL อย่างละ 1) → confirm commission scheme
 2. **TIDLOR 56-1 2024** → sanity check avg comp per head
 3. **Adecco 2026 ตัวเต็ม** → cross-reference
 4. (Optional) **Mercer/Hay custom report** ~150K–300K บาท
@@ -222,11 +219,12 @@ Year 8+  →  AM-1 (Area Manager)
 
 | # | Decision | Owner | Recommendation |
 |---|---|---|---|
-| 1 | **Positioning premium**: +15% หรือ +25% above NTL? | CEO + Director | **+15% mid-band, +25% top-band** |
-| 2 | **Commission cap**: uncapped หรือ ceiling? | CFO + CEO | **Uncapped** + accelerator |
-| 3 | **ESOP for BM+**: ใส่ stock option หรือไม่? | CEO | ขึ้นกับ IPO timeline |
+| 1 | **Parity approach final?**: confirm PCK = upper band ของ Ngern Tid Lor ทุก grade (ไม่ premium) | CEO + Director | **Confirm parity** — control cost, ชนะด้วย non-pay |
+| 2 | **Commission cap**: uncapped หรือ ceiling? | CFO + CEO | **Uncapped** + accelerator (ใน range Ngern Tid Lor) |
+| 3 | **ESOP for BM+**: ใส่ stock option หรือไม่? | CEO | ขึ้นกับ IPO timeline (Ngern Tid Lor มีให้ senior) |
 | 4 | **License clawback**: ลาออกใน 1 ปีต้องคืนค่าสอบ? | Legal | **Yes, pro-rata 12 เดือน** |
 | 5 | **RM-referred-RM bonus** (MLM-style)? | CEO | **Pilot 6 เดือน** ค่อยประเมิน |
+| 6 | **Non-pay differentiator positioning** — story อะไรเป็นตัวดึง talent? | CEO + Director | Career path speed + training + brand + culture |
 
 **Inputs ที่ต้องการจาก PCK**
 - Year 1 headcount target (RM และ TL) → ใช้คำนวณ budget รวม
@@ -238,14 +236,15 @@ Year 8+  →  AM-1 (Area Manager)
 ## Next Steps
 
 **Week 1–2 (HR Officer)**
-- Insider sourcing 3–4 calls (ex-NTL, ex-Krungsri Auto, ex-SAWAD)
+- Insider sourcing 3–4 calls (ex-Ngern Tid Lor, ex-Krungsri Auto, ex-SAWAD)
 - Pull TIDLOR 56-1 + Adecco 2026 full guide
-- Compile RM และ TL **JD draft** ที่ match grade structure ใหม่
+- Compile RM และ TL **JD draft** ที่ match grade structure ใหม่ (parity)
 
 **Week 2–3 (Director sign-off)**
-- Positioning premium decision (+15% vs +25%)
+- Confirm parity approach final
 - Commission scheme philosophy
 - ESOP + clawback + referral bonus decisions
+- Non-pay differentiator positioning narrative
 
 **Week 3–4 (PCK alignment session)**
 - Present finalized structure
@@ -257,8 +256,8 @@ Year 8+  →  AM-1 (Area Manager)
 ## Appendix — Key Sources
 
 **Job boards & company sites**
-- JobsDB Thailand (NTL, Team Leader, Branch Manager, Credit Officer — May 2026)
-- JobThai, JobBKK, JobThaiWeb — NTL/SAWAD/MTC/Turbo postings
+- JobsDB Thailand (Ngern Tid Lor, Team Leader, Branch Manager, Credit Officer — May 2026)
+- JobThai, JobBKK, JobThaiWeb — Ngern Tid Lor / SAWAD / MTC / Turbo postings
 - TIDLOR, SAWAD, MTC, Krungsri Auto, Turbo, AEON careers pages
 
 **Salary references**
@@ -267,7 +266,7 @@ Year 8+  →  AM-1 (Area Manager)
 - Deloitte Thailand Salary Policies Survey 2025
 
 **Employee reviews (insider data)**
-- Pantip (NTL, MTC, AEON threads)
+- Pantip (Ngern Tid Lor, MTC, AEON threads)
 - Indeed Thailand, YouSayHRsay
 
 **Mindset reference**
@@ -284,4 +283,4 @@ Year 8+  →  AM-1 (Area Manager)
 **Questions / Discussion**
 
 Northworks HR Advisory
-*Prepared 16 May 2026 — Draft v1*
+*Prepared 16 May 2026 — Draft v2 (parity approach)*
