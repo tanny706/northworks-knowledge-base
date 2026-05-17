@@ -60,6 +60,9 @@ Each note should be independently understandable. Include:
   ├── Finance/                # Billing rates, utilization, revenue
   └── Business Development/   # Pipeline strategy, BD activities, outreach
 
+📁 Leads/                     # Potential clients (pre-engagement pipeline)
+  └── _Index.md              # Master leads list by stage; promote to Clients/ on win
+
 📁 Clients/                   # Client profiles and relationship management
   └── _Index.md              # Master client list with status
 
