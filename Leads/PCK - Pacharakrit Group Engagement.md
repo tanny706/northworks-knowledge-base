@@ -170,13 +170,13 @@ Take over project management for Chiang Rai property portfolio:
 - **Credit Officer / RM** — see profile in Pillar 2 above
 
 **Action Plan agreed in meeting:**
-- [ ] Tanny to schedule 1–2 day CEO shadowing block with Khun Nut
+- [ ] **Sadao** to book the deal-active shadowing day + backup day + Khun Chon 2-hour block with Khun Nut / his secretary
 - [ ] Create separate Line groups: HR workstream vs Real Estate PM (Chiang Rai) — to keep content streams clean
 - [ ] Standing weekly meeting cadence (1–2x / week) to drive detail and pace
 - [ ] Sai Fah La Mun team to present HR Roadmap to Khun Nut ASAP
 
 ## Follow-ups (consolidated)
-- [ ] **Schedule CEO shadowing** with Khun Nut (1–2 days, full immersion 7 AM gym → 3–4 AM intl calls)
+- [ ] **Schedule CEO shadowing** with Khun Nut — **Sadao to book** (one deal-active day + backup day + separate 2-hour Khun Chon block, same week). See [[PCK - CEO Shadowing Plan]] for booking criteria.
 - [ ] **Draft HR Roadmap** for presentation to Khun Nut (Vision → Mission → Positioning → Org Chart → headcount → hiring plan → onboarding/training → compensation → SOPs)
 - [ ] **Draft EA JD** for Khun Chon (male, Gen Y, credit-savvy, driver, 20K + commission)
 - [ ] **Draft Credit Officer / RM JD** (MLM/insurance background, ownership mindset, deal-cycle commission)

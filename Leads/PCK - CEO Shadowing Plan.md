@@ -167,13 +167,13 @@ His day runs 6–7 AM to 2–4 AM. This is not sustainable and it is not optiona
 
 ### Pre-day prep (the week before)
 
-- [ ] **Lock the day(s).** Pick days that include at least one client meeting, one internal team interaction, and one deal-review moment. Avoid pure travel days unless the travel itself is the workstream.
+- [ ] **Lock the day** (owner: **Sadao** — handling booking with Khun Nut / his secretary). Day must include: at least one international fund call, at least one credit decision / deal review, at least one team interaction with the 5 staff. Avoid pure travel days unless the travel itself is the workstream. Backup day also booked.
 - [ ] **Send a one-page brief to Khun Nut** restating: scope, what we'll do, what we won't do, what we'll deliver back, what consent we need for recording.
-- [ ] **Get explicit consent** for: voice memos during quiet observation moments, photos of whiteboards/documents (no client-identifying material), and 1:1 follow-up conversations with the 5 staff and Khun Chon.
+- [ ] **Get explicit consent** for: voice memos during quiet observation moments, photos of whiteboards/documents (no client-identifying material), and Joy's ambient presence near the 5 staff during the day. (No formal staff 1:1s — see Section 7.) Separate 2-hour block with Khun Chon also needs consent.
 - [ ] **Brief the 5 staff** through Khun Nut: "พี่ ๆ น้อง ๆ ทีม Sai Fah La Mun จะมาเดินสังเกตการทำงานวันที่ X เป็นการช่วยออกแบบระบบ HR ใหม่ ไม่ใช่การประเมินใคร ขอความร่วมมือทำงานตามปกติเลย" — short, clear, non-threatening.
-- [ ] **Decide who shadows what.** Suggested split:
+- [ ] **Decide who shadows what.** Split:
   - **Tanny** stays with Khun Nut throughout (primary observer, relational anchor).
-  - **Joy** floats — does parallel observation of the 5 staff and, if available, Khun Chon. Coordinates logistics.
+  - **Joy** is now the **primary instrument for staff observation** (since we're not doing 1:1s — see Section 7). Stays in the room when Khun Nut steps out, sits near the staff during work, present at lunch/breaks. Captures body language, tone, reactions to Khun Nut, what staff talk about when he's not there. Also handles logistics.
   - Sadao/Puk not needed for this; this is HR workstream.
 - [ ] **Prepare capture tools:**
   - Paper notebook + pen (less intrusive than laptop in Thai SME settings)
@@ -239,7 +239,7 @@ Confirm tomorrow's calendar with him. Identify which blocks we'll observe live, 
 
 - **Don't interrogate.** This is shadowing, not interview. Questions are for transition moments only.
 - **Don't take notes visibly in front of the 5 staff.** They will perform or freeze. Step away to capture; or capture later from memory + voice memo.
-- **Don't speak to staff *about* Khun Nut on Day 1.** Earn the room first. Save 1:1 staff conversations for Day 2 or post-shadowing.
+- **Don't speak to staff *about* Khun Nut at all.** Joy is observing ambient, not interviewing. Casual chat about their work and day-to-day is fine; do not ask staff to evaluate or comment on Khun Nut. We are not doing formal 1:1s (Section 7).
 - **Don't react visibly to "too kind" moments.** No raised eyebrows, no "you should have...". Note it, debrief privately later.
 - **Don't reference the failed MDs unprompted.** If he raises them, listen. If not, save for a calm 1:1 in the debrief.
 - **Don't try to add value during the day.** Resist the urge to suggest, advise, or fix. Pure observation is the value. Advice is for the post-synthesis.
@@ -262,18 +262,20 @@ For each block, walk away with:
 
 ## 4. Pre-shadowing checklist (logistics + consent)
 
-- [ ] Days locked with Khun Nut and on his calendar
+- [ ] Day locked with Khun Nut and on his calendar (Sadao to book)
 - [ ] One-page brief sent and acknowledged
-- [ ] Consent confirmed (verbal + Line message for record): observation, voice memos, photos (non-client), 1:1s with staff and Khun Chon
-- [ ] Staff briefed by Khun Nut (we draft the message for him, he sends)
-- [ ] Khun Chon time blocked separately if possible (2 hours minimum)
+- [ ] Consent confirmed (verbal + Line message for record): observation, voice memos, photos (non-client), Joy's ambient presence near staff, Khun Chon 2-hour block
+- [ ] Staff briefed by Khun Nut (we draft the message for him, he sends) — clarify Joy will be present but is observing, not interviewing
+- [ ] Khun Chon 2-hour block confirmed and scheduled, same week (no longer "if possible" — locked)
 - [ ] Tanny + Joy roles assigned (primary observer + floating observer/coordinator)
 - [ ] Capture toolkit prepared (notebook, pen, phone, printed observation grids, deal-cycle template)
 - [ ] Pre-written calm-moment questions printed/saved
 - [ ] Hard-stop boundaries agreed internally (no gym, no family calls, no personal medical/financial)
-- [ ] Backup day on calendar in case Day 1 gets blown up by a deal emergency
+- [ ] Backup day on calendar in case the chosen day gets blown up by a deal emergency (critical — we only have one day)
 - [ ] Post-shadowing 90-min synthesis session booked (Tanny + Joy, within 48 hours)
-- [ ] Debrief slot with Khun Nut booked (within 7 days of shadowing)
+- [ ] **Written summary** drafted within 5 days of shadowing
+- [ ] **Written summary sent to Khun Nut** 24–48 hours before the debrief meeting
+- [ ] Debrief slot with Khun Nut booked (within 7 days of shadowing, 60–90 min, after he's read the summary)
 
 ---
 
@@ -287,9 +289,10 @@ For each block, walk away with:
 
 ### Within 48 hours (Tanny + Joy, 90 min)
 - Walk through the observation grids together (catches each other's blind spots)
-- Cross-check Joy's parallel observations of the 5 staff and Khun Chon against Tanny's observations of Khun Nut
+- Cross-check Joy's parallel observations of the 5 staff against Tanny's observations of Khun Nut — Joy's ambient capture is our *only* staff data source (no 1:1s), so this cross-check is load-bearing
 - Draft the **"Operational Definition of Ownership Mindset at PCK"** — a one-pager, in his own words and behaviors, ready to anchor every downstream artifact
 - Identify the 3 biggest "huh" insights — the things we didn't expect and that change our design assumptions
+- Explicitly list **what we couldn't see in one day** — gaps to flag in the written summary and revisit later
 
 ### Within 7 days — feed observations into draft deliverables
 Direct mapping from observation category → first-draft artifact:
@@ -304,13 +307,22 @@ Direct mapping from observation category → first-draft artifact:
 - 2i (discipline) → Disciplinary framework proposal designed around his temperament
 - 2j (bandwidth) → CEO time-protection recommendations for the Roadmap intro
 
-### Debrief with Khun Nut (within 7 days, private, 60–90 min)
-Three sections, in this order:
+### Written summary → Debrief with Khun Nut (sequencing locked in Section 7)
+
+**Step 1 — Written summary (sent 24–48 hours before the debrief meeting):**
+A 3–5 page document covering, in this order:
 1. **What we saw that's working** (lead with strength — earn the right to the hard part)
 2. **What we saw that surprised us** (neutral curiosity, not judgment)
 3. **The two or three patterns we think are limiting the scale** (named directly, with concrete examples from the day — *not* abstract advice)
+4. **What we couldn't see in one day** (named gaps, so he knows the limits of what we're claiming)
+5. **What we want to dig deeper on before the Roadmap** (preview of the discussion)
 
-Close with: "Roadmap presentation [date]. Here's what we'll bring back. Anything you want us to dig deeper on before then?"
+Send via private channel (Line direct to him, or printed handoff). Mark "ส่วนตัว — สำหรับคุณณัฐเท่านั้น" (private — for Khun Nut only). Do not share with his secretary or staff.
+
+**Step 2 — Debrief meeting (within 7 days of shadowing, private, 60–90 min):**
+Assume he has read the summary. Open with: "ได้อ่านที่เราส่งไปแล้วใช่ไหมคะ ส่วนไหนที่อยากเริ่มคุยก่อน?" — let him lead which section to engage. He may push back, agree, expand, or surface things the document missed. All of those reactions are gold for the Roadmap design.
+
+Close with: "Roadmap presentation [date]. Here's what we'll bring back. Anything you want us to revise in this summary before we move on?"
 
 ### Then the HR Roadmap presentation
 By the time we present, every recommendation is traceable to a moment we observed. That's the trust-builder. That's also why the previous two MDs failed and we won't.
@@ -319,11 +331,14 @@ By the time we present, every recommendation is traceable to a moment we observe
 
 ## 6. Risks and things to handle carefully
 
-**Risk: He performs a curated day for us.**
-Mitigation: Two days, not one. The first day is performed; the second is real. If we only get one day, schedule it on a day he can't control (a deal-crisis day, an end-of-month day) rather than a "nice" day.
+**Risk: He performs a curated day for us.** ⚠️ Elevated since we're doing one day, not two (Section 7).
+Mitigation: Pick a day he *can't* curate — a deal-crisis day, an end-of-month day, a day after an international call where he has follow-ups landing on him. Avoid days he or his secretary "set up nicely" for us. The 60-min pre-day call should test for this: if the day looks too tidy, swap to the backup.
 
 **Risk: The 5 staff freeze up or perform for us.**
-Mitigation: Joy floats and chats casually; we do not "observe" them in any clipboard sense on Day 1. Save real staff 1:1s for after the shadowing, framed as "context for the Roadmap" not "evaluation."
+Mitigation: Joy is ambient — present, casual, not visibly capturing. No clipboard, no questions about Khun Nut. We are not doing formal 1:1s (Section 7), so the entire staff signal comes from ambient observation. Brief the staff (via Khun Nut) that Joy is "designing the new system, not evaluating you."
+
+**Risk (new — from skipping staff 1:1s): We over-rely on Khun Nut's framing of his own team.**
+Mitigation: Joy's ambient observation must capture *staff-initiated* moments — what they talk about when he leaves the room, who they go to with questions, who they avoid. Cross-check Joy's notes against Khun Nut's narrative in the 48-hour synthesis. If the gap is significant, flag in the written summary and propose a follow-up staff conversation post-Roadmap.
 
 **Risk: We see "too kind" moments and react visibly.**
 Mitigation: Pre-agreed internal signal between Tanny and Joy — a glance, not a comment. Process in the car, not in the room.
@@ -351,13 +366,28 @@ Mitigation: This is actually a gift if it happens — capture it. But re-anchor 
 
 ---
 
-## 7. Open questions / decisions before we lock the day
+## 7. Decisions locked
 
-- [ ] **One day or two?** Recommendation: two non-consecutive days (e.g., Tuesday + Friday) within a 7–10 day window. Captures variance. If only one — pick a deal-active day.
-- [ ] **Do we shadow Khun Chon as a separate half-day, or integrate?** Recommendation: separate 2-hour block, ideally same week.
-- [ ] **Do we do staff 1:1s as part of shadowing or after?** Recommendation: after — 15–20 min each with the 5 staff, framed as "context interviews for the Roadmap," done in week following shadowing.
-- [ ] **Recording policy** — voice memos only with explicit per-instance consent ("ขอจดเสียงช่วงนี้ได้ไหมคะ?") — no blanket recording.
-- [ ] **Debrief format with Khun Nut** — private 1:1 only, no written report shared before the verbal debrief. Written summary follows the conversation, not precedes it.
+- [x] **Days**: **One day, deal-active.** ⚠️ Higher-stakes than the two-day option — we have one shot at primary data, so the deal-day selection and pre-day prep call carry the load. See "What changes because it's one day" below.
+- [x] **Khun Chon**: **Separate 2-hour block, same week.** Focused observation just for the EA JD design.
+- [x] **Staff 1:1s**: **Skip — observation only.** ⚠️ We lose the voice of the 5 staff who survived the exodus. Compensating moves (see below): Joy's floating observation becomes the primary staff data source, and we capture informal moments (lunch, hallway, ride-along) more deliberately. Flag in the debrief that the Roadmap is grounded in observed behavior, not staff self-report.
+- [x] **Debrief with Khun Nut**: **Written summary first, then 60–90 min discussion.** Send 24–48 hours ahead so he can react privately before the conversation. Discuss in person.
+- [x] **Recording**: **Per-instance voice memo consent** ("ขอจดเสียงช่วงนี้ได้ไหมคะ?") — no blanket recording.
+
+### What changes because it's one day (not two)
+
+- **The "deal-active" criterion is do-or-die.** Coordinate with Khun Nut and his secretary to pick a day with: at least one live international fund call, at least one credit decision / deal review, at least one team interaction with the 5 staff. If those three aren't all on the calendar — pick a different day.
+- **Pre-day call (Block A) goes from 30 min → 60 min.** Use the longer prep to identify which 3–4 weekly patterns we will *not* observe live and need summarized debriefs on later (e.g. "we won't see your usual Friday team review — walk us through how it normally runs").
+- **Build in a backup day** on the calendar in case the chosen day gets blown up by a deal emergency. Better to reschedule than salvage half a day.
+- **Synthesis cycle compresses.** Tanny solo within 24 hours; Tanny + Joy within 48 hours (no "between days" pause to integrate Day 1 before Day 2).
+- **Risk: we see a curated day.** Mitigation in Section 6 updated — pick a day he *can't* curate (deal-crisis day, end-of-month, just-after-international-call) rather than a "nice" day.
+
+### What changes because we're skipping staff 1:1s
+
+- **Joy's role intensifies.** She is no longer a floating observer-coordinator — she is the primary instrument for capturing staff perspective through ambient observation, hallway conversation, and lunch-table presence. Brief her separately.
+- **Capture staff-Khun Nut interaction moments verbatim.** Body language, tone, who initiates, who avoids. The team's *reactions* to him are now the proxy for what staff 1:1s would have surfaced.
+- **Lunch / break / transition time becomes data.** Not scheduled observation, but Joy stays in the room. Watch what the staff talk about when Khun Nut steps out.
+- **The end-of-day "name the 5 staff and what each actually does"** (success criterion 2 in Section 8) is now harder without 1:1s. Flag the gaps explicitly in the synthesis and note them in the debrief — "here is what we couldn't see from observation alone; we may need to revisit."
 
 ---
 
